@@ -573,9 +573,12 @@ h3 {
             }
 
             .chat-message {
-                display: flex;
+                display: flex;                
                 margin-top: 15px;
                 gap: 15px;
+                @media (max-width: 768px) {
+                    flex-direction: column;                    
+                }                
                 input {                    
                     border-radius: 10px;
                     flex: 1;
@@ -596,6 +599,9 @@ h3 {
                 button {
                     border: none;
                     cursor: pointer;
+                    @media (max-width: 768px) {
+                        width:20%;
+                    }                    
                 }
             }
         }
