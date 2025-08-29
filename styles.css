@@ -189,8 +189,8 @@ section {
 	margin-top:30px;
 	margin-bottom:30px;
 	@media (max-width:1440px){
-		padding-left:18px;
-		padding-right:18px;
+		padding-left:15px;
+		padding-right:15px;
 	}
 }
 
