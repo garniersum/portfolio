@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo-holder">
+        <a href="#" class="logo-holder" onclick="closeMenu();">
             <div class="logo">
                 <img src="./imgs/favicon/android-chrome-192x192.png" alt="Logo C" width="38" />
             </div>
@@ -25,19 +25,19 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="#" onClick="toggleMobileMenu();">Home</a>
+                    <a href="#" onClick="closeMenu();">Home</a>
                 </li>
                 <li>
-                    <a href="#skills" onClick="toggleMobileMenu();">Skills</a>
+                    <a href="#skills" onClick="waitAndCloseMenu()" >Skills</a>
                 </li>
                 <li>
-                    <a href="#projects" onClick="toggleMobileMenu();">Projects</a>
+                    <a href="#projects" onClick="waitAndCloseMenu()">Projects</a>
                 </li>
                 <li>
-                    <a href="mailto:garnier.sum@gmail.com" class="button">Contact Me</a>
+                    <a href="mailto:garnier.sum@gmail.com" class="button black">Contact Me</a>
                 </li>
             </ul>
-            <a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+            <a class="mobile-toggle" onClick="toggleMobileMenu();">
                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
@@ -46,7 +46,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero container">
+        <section class="hero container" onclick="closeMenu();">
             <div class="hero-blue">
                 <div>
                     <h1><small>Hi I'm</small>
