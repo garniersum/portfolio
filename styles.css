@@ -333,7 +333,7 @@ h4 {
   background-color: var(--base-100);
   border-radius: 30px;
   padding: 5px 0;
-
+  margin-top: -10px;
   @media (max-width: 1440px) {
     border-radius: 0;
   }
@@ -341,34 +341,34 @@ h4 {
   .marquee {
     width: 100vw;
     max-width: 100%;
-    height: 50px;
+    height: 80px;
     overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
+
     .track {
       position: absolute;
       display: flex;
-      gap: 2rem; /* Espacio entre íconos */
+      gap: 2rem;
       align-items: center;
       white-space: nowrap;
       will-change: transform;
       animation: marquee 40s linear infinite;
 
-      /* Quitamos flex-wrap porque es un marquee horizontal */
       flex-wrap: nowrap;
     }
 
     /* Estilos específicos para íconos SVG o imágenes */
     .icon {
-      width: 44px;  /* Tamaño fijo para todos */
-      height: 44px;
+      width: 66px;
+      height: 66px;
       flex-shrink: 0; /* No permitir que se deformen */
       transition: transform 0.3s ease;
       cursor: pointer;
 
       &:hover {
-        transform: scale(1.15); /* Efecto zoom suave */
+        transform: scale(1.15);
       }
     }
 
@@ -376,12 +376,11 @@ h4 {
     img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* Mantener proporción sin deformar */
+      object-fit: contain;
     }
   }
 }
 
-/* Animación marquee */
 @keyframes marquee {
   0% {
     transform: translateX(0);
