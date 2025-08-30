@@ -216,12 +216,13 @@ section {
     &.white {
         background-color: white;
         color: var(--base-800);
-        /*border: 2px solid var(--base-800);*/
+        @media (max-width: 768px) {
+          border: 2px solid var(--base-100);  
+        }
 
         &:hover {
             background-color: var(--base-100);
             color: var(--base);
-            border-color: var(--base);
         }
     }
 
@@ -271,7 +272,10 @@ h4 {
         }
 
         flex: 1;
-        background-color: var(--blue-100);
+        @media (min-width:768px) {
+            background-color: var(--blue-100);    
+        }
+        
         border-radius: 30px;
         padding: 20px;
         display: flex;
@@ -317,9 +321,9 @@ h4 {
         }
         @media (max-width: 768px) {
             img {
-                margin-top: -35px;
-                max-width: 320px;
-                margin-bottom: -45px;
+                margin-top: -45px;
+                max-width: 280px;
+                margin-bottom: -52px;
             }   
         }
     }
@@ -398,7 +402,7 @@ h3 {
         padding: 15px;
         display: flex;
         padding-top: 28px;
-        @media (max-width:1024px){
+        @media (max-width:768px){
             flex-direction: column;
         }
         .left-column {
