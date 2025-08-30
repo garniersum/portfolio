@@ -217,7 +217,7 @@ section {
         background-color: white;
         color: var(--base-800);
         @media (max-width: 768px) {
-          border: 2px solid var(--base-100);  
+          border: 3px solid var(--base-100);  
         }
 
         &:hover {
@@ -439,9 +439,10 @@ h3 {
                 li {
                     display: inline-block;
                     background-color: var(--blue-400);
-                    padding: 8px 16px;
+                    padding: 9px 20px;
                     border-radius: 15px;
                     margin-bottom: 10px;
+                    margin-right: 10px;
                 }
             }
         }
