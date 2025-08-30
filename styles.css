@@ -330,7 +330,9 @@ h4 {
 }
 
 .logos {
-  background-color: var(--base-100);
+  @media (min-width: 1440px) {
+    background-color: var(--base-100);
+  }  
   border-radius: 15px;
   padding: 5px 0;
   margin-top: -15px;
