@@ -339,7 +339,7 @@ h4 {
   @media (max-width: 1440px) {
     border-radius: 0;
   }
-
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
   .marquee {
     width: 100vw;
     max-width: 100%;
@@ -348,7 +348,7 @@ h4 {
     position: relative;
     display: flex;
     align-items: center;
-
+    
     .track {
       position: absolute;
       display: flex;
@@ -357,7 +357,7 @@ h4 {
       white-space: nowrap;
       will-change: transform;
       animation: marquee 40s linear infinite;
-
+        
       flex-wrap: nowrap;
     }
 
