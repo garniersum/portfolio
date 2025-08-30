@@ -330,44 +330,67 @@ h4 {
 }
 
 .logos {
-    background-color: var(--base-100);
-    border-radius: 30px;
-    padding:22px 0px;
-    @media (max-width:1440px) {
-        border-radius: 0px;        
-    }
-    .marquee{
-        width:100vw;
-        max-width: 100%;
-        height: 128px; 
-        overflow: hidden;
-        position: relative;
-        .track{
-            position: absolute;
-            white-space: nowrap;
-            will-change: transform;
-            animation: marquee 40s linear infinite;
-            display: flex;
-            gap: 10px;
+  background-color: var(--base-100);
+  border-radius: 30px;
+  padding: 5px 0;
 
-            img {
-                width: 128;
-                height: 100%;
-                object-fit:cover;
-            }            
-        }
+  @media (max-width: 1440px) {
+    border-radius: 0;
+  }
+
+  .marquee {
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    .track {
+      position: absolute;
+      display: flex;
+      gap: 2rem; /* Espacio entre íconos */
+      align-items: center;
+      white-space: nowrap;
+      will-change: transform;
+      animation: marquee 40s linear infinite;
+
+      /* Quitamos flex-wrap porque es un marquee horizontal */
+      flex-wrap: nowrap;
     }
+
+    /* Estilos específicos para íconos SVG o imágenes */
+    .icon {
+      width: 44px;  /* Tamaño fijo para todos */
+      height: 44px;
+      flex-shrink: 0; /* No permitir que se deformen */
+      transition: transform 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.15); /* Efecto zoom suave */
+      }
+    }
+
+    /* Para imágenes PNG o JPG */
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Mantener proporción sin deformar */
+    }
+  }
 }
 
+/* Animación marquee */
 @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
-    
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
+
 
 h2 {
     font-size: 3.5rem;
