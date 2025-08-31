@@ -425,14 +425,23 @@ h3 {
         padding-top: 28px;
         @media (max-width:768px){
             flex-direction: column;
+            h3 {
+                display: flex;
+                justify-content: center;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
         }
+
         .left-column {
-            flex: 1;
+            flex: 1;            
             ul {
                 list-style: none;
                 gap: 10px;
-                margin-right: 20px;
-                margin-bottom: 20px;
+                margin-bottom: 20px;        
                 li {
                     display: inline-block;
                     background-color: var(--blue-400);
@@ -440,6 +449,7 @@ h3 {
                     border-radius: 15px;
                     margin-bottom: 10px;
                     margin-right: 10px;
+
                 }
             }
         }

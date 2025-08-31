@@ -14,7 +14,7 @@ function closeMenu(){
   document.addEventListener("DOMContentLoaded", function() {
     new Typed("#typing", {
       strings: ["Carlos Gómez", "Frontend Developer"],
-      typeSpeed: 100,
+      typeSpeed: 50,
       BackSpeed: 60,
       loop: true,
     });
