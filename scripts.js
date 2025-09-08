@@ -11,11 +11,11 @@ function closeMenu(){
       document.getElementById("menu").classList.remove("active");
 }
 
-  /* document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     new Typed("#typing", {
       strings: ["Carlos Gómez", "Frontend Developer"],
       typeSpeed: 50,
       BackSpeed: 60,
       loop: true,
     });
-  }); */
+  }); 
