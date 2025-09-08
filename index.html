@@ -2,264 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js"></script>
-    <link rel="icon" type="image/jpg" href="./imgs/favicon/android-chrome-192x192.png">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Gómez | Frontend Developer Portfolio</title>
+
+  <!-- 🔑 Meta tags SEO -->
+  <meta name="description" content="Portfolio of Carlos Gómez, a Guatemalan Frontend Developer skilled in HTML, CSS, JavaScript, React, Next.js and Tailwind. Includes projects, skills, and work experience.">
+  <meta name="author" content="Carlos Gómez">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Carlos Gómez | Frontend Developer Portfolio">
+  <meta property="og:description" content="Discover the skills, projects, and experience of Carlos Gómez, a passionate frontend developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./imgs/hero-image.png">
+  <meta property="og:url" content="https://tusitio.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./imgs/favicon/android-chrome-192x192.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS & JS -->
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo-holder" onclick="closeMenu();">
-            <div class="logo">
-                <img src="./imgs/favicon/android-chrome-192x192.png" alt="Logo C" width="38" />
-            </div>
-            <div class="logo-text">arlos</div>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="#" onClick="closeMenu();">Home</a>
-                </li>
-                <li>
-                    <a href="#skills" onClick="waitAndCloseMenu()" >Skills</a>
-                </li>
-                <li>
-                    <a href="#projects" onClick="waitAndCloseMenu()">Projects</a>
-                </li>
-                <li>
-                    <a href="mailto:garnier.sum@gmail.com" class="button black">Contact Me</a>
-                </li>
-            </ul>
-            <a class="mobile-toggle" onClick="toggleMobileMenu();">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
-                </svg>
-            </a>
-        </nav>
-    </header>
-    <main>
-        <section class="hero container" onclick="closeMenu();">
-            <div class="hero-blue">
-                <div>
-                    <h1><small>Hi I'm</small>
-                         <span id="typing">Carlos Gómez</span>
-                    </h1>                  
-                    <p>
-                        Guatemalan who creates projects in HTML, CSS
-                        and Javascript. <span id="span--description">I'm interested in AI topics which is why I also add things like chatGPT into my projects these days.</span>
-                    </p>
-                    <div class="call-to-action">
-                        <a href="./Sample_Resume_Template.pdf" target="_blank" class="button black">
-                            View resume
-                        </a>
-                        <a href="mailto:garnier.sum@gmail.com" class="button white">
-                            Contact Me
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/" aria-label="GitHub profile">
-                            <img src="./imgs/github.png" alt="GitHub logo" width="48" />
-                        </a>
-                        <a href="#">
-                            <img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-yellow">
-                <img src="./imgs/hero-image.png" alt="Carlos Gómez" width="100%" />
-            </div>
-        </section>
-        <section class="logos container">
-            <div class="marquee">
-                <div class="track">                    
-                    <img src="./imgs/html5.svg" alt="HTML5" class="icon" />
-                    <img src="./imgs/css3.svg" alt="CSS3" class="icon" />
-                    <img src="./imgs/tailwind.svg" alt="Tailwind" class="icon" />
-                    <img src="./imgs/javascript.svg" alt="JavaScript" class="icon" />
-                    <img src="./imgs/react.svg" alt="React" class="icon" />
-                    <img src="./imgs/nextjs.svg" alt="Next.js" class="icon" />                    
-                    <img src="./imgs/vscode.svg" alt="VScode" class="icon" />
-                    <img src="./imgs/github.svg" alt="GitHub" class="icon" />
-                    <img src="./imgs/html5.svg" alt="HTML5" class="icon" />
-                    <img src="./imgs/css3.svg" alt="CSS3" class="icon" />
-                    <img src="./imgs/tailwind.svg" alt="Tailwind" class="icon" />
-                    <img src="./imgs/javascript.svg" alt="JavaScript" class="icon" />
-                    <img src="./imgs/react.svg" alt="React" class="icon" />
-                    <img src="./imgs/nextjs.svg" alt="Next.js" class="icon" />                    
-                    <img src="./imgs/vscode.svg" alt="VScode" class="icon" />
-                    <img src="./imgs/github.svg" alt="GitHub" class="icon" />
-                    <img src="./imgs/html5.svg" alt="HTML5" class="icon" />
-                    <img src="./imgs/css3.svg" alt="CSS3" class="icon" />
-                    <img src="./imgs/tailwind.svg" alt="Tailwind" class="icon" />
-                    <img src="./imgs/javascript.svg" alt="JavaScript" class="icon" />
-                    <img src="./imgs/react.svg" alt="React" class="icon" />
-                    <img src="./imgs/nextjs.svg" alt="Next.js" class="icon" />                    
-                    <img src="./imgs/vscode.svg" alt="VScode" class="icon" />
-                    <img src="./imgs/github.svg" alt="GitHub" class="icon" />                    
-                </div>
-            </div>
-        </section>
-        <section id="skills" class="skills container">
-            <h2>
-                <small>About Me</small>
-                Skills
-            </h2>
-            <div class="holder-blue">
-                <div class="left-column">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Tailwind</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Next.js</li>
-                    </ul>                    
-                </div>
-                <div class="right-column">
-                    <h3>A bit about me</h3>
-                    <p>
-                        I'm proactive and used to working in competitive environments. With strong interpersonal skills.
-                    </p>
-                    <p>
-                        Guatemalan who creates projects in HTML, CSS and Javascript.
-                    </p>            
-                </div>
-            </div>
-        </section>
-        <section class="work-experience container">
-            <h2>
-                <small>Recent</small>
-                Work Experience
-            </h2>
-            <div class="jobs">
-                <article>
-                    <figure>
-                        <div>
-                            <img src="./imgs/workplace-1.jpg" alt="workplace-1" width="100%" loading="lazy"/>
-                            <figcaption>
-                                Bloom - College Hunks
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <h3>CHHJ</h3>
-                    <div>2024 - 2025</div>
-                    <p>Inbound sales agent: Selling moving services.</p>
-                </article>
-                <article>
-                    <figure>
-                        <div>
-                            <img src="./imgs/workplace-2.jpg" alt="workplace-2" width="100%" loading="lazy"/>
-                            <figcaption>
-                                CONDUENT - 
-                                Royal Caribbean
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <h3>Royal Caribbean</h3>
-                    <div>2021 - 2023</div>
-                    <p>I was a Sales Agent: I sold travels on cruises.</p>
-                </article>
-                <article>
-                    <figure>
-                        <div>
-                            <img src="./imgs/workplace-3.jpg" alt="workplace-3" width="100%" loading="lazy"/>
-                            <figcaption>
-                                GENPACT - Citi Bank
-                            </figcaption>
-                        </div>
-                    </figure>
-                    <h3>Citi Bank</h3>
-                    <div>2018 - 2021</div>
-                    <p>A sold financial solutions, credit cards.  
-                    </p>
-                </article>                                
-            </div>
-        </section>
-        <section id="projects" class="bento container">
-            <h2>
-                <small>
-                    Previous    
-                </small>
-                Completed Projects
-            </h2>
-            <div class="bento-grid">
-                <a href="#" class="bento-item">
-                    <img src="./imgs/bento-1.jpg" alt="ProjectName-1" width= "100%" loading="lazy"/>
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/bento-2.jpg" alt="ProjectName-2" width= "100%" loading="lazy"/>
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/bento-3.jpg" alt="ProjectName-3" width= "100%" loading="lazy"/>
-                </a>                                
-                <a href="#" class="bento-item">
-                    <img src="./imgs/bento-5.jpg" alt="ProjectName-4" width= "100%" loading="lazy"/>
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/bento-6.jpg" alt="ProjectName-5" width= "100%" loading="lazy"/>
-                </a>
-                <a href="#" class="bento-item">
-                    <img src="./imgs/bento-7.jpg" alt="ProjectName-6" width= "100%" loading="lazy"/>
-                </a>                
-            </div>
-        </section>
-        <section class="chatbot container">
-            <h2>
-                <small>
-                    Talk to me
-                </small>
-                Chatbot
-            </h2>
-            <div class="chatbot-blue">
-                <div class="chat-info">
-                    <h3>Azure AI Chatbot</h3>
-                    <p>
-                        I've put together a chatbot here which knows all my skills, work experience and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done.
-                    </p>
-                    <p>
-                        You can also download my resume here if you want to take a look at it. I'm currently looking for new opportinities so if you have a project you think I'd be a good fit for, please get in touch!
-                    </p>
-                    <a href="./Sample_Resume_Template.pdf" target="_blank" class="button black">Download Resume</a>
-                </div>
-                <div class="chat-box">
-                    <div class="scroll-area">
-                        <ul id="chat-log">
-                            <li>
-                                <span class="avatar bot">AI</span>
-                                <div class="message">
-                                    Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
-                                </div>
-                            </li>
-                            <li>
-                                <span class="avatar user">User</span>
-                                <div class="message">
-                                    I have a question to ask you about this resume
-                                </div>
-                            </li>                            
-                        </ul>
-                    </div>
-                    <div class="chat-message">
-                        <input type="text" placeholder="Hey Adrian, what skills are you best at?">
-                        <button class="button black">Send</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
+  <header>
+    <a href="/" class="logo-holder" onclick="closeMenu();" aria-label="Carlos Gómez home">
+      <div class="logo">
+        <img src="./imgs/favicon/android-chrome-192x192.png" alt="Logo Carlos Gómez" width="38" />
+      </div>
+      <div class="logo-text">Carlos</div>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul id="menu">
+        <li><a href="#home" onClick="closeMenu();">Home</a></li>
+        <li><a href="#skills" onClick="waitAndCloseMenu()">Skills</a></li>
+        <li><a href="#projects" onClick="waitAndCloseMenu()">Projects</a></li>
+        <li><a href="mailto:garnier.sum@gmail.com" class="button black">Contact Me</a></li>
+      </ul>
+      <a class="mobile-toggle" onClick="toggleMobileMenu();" aria-label="Toggle menu">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+        </svg>
+      </a>
+    </nav>
+  </header>
 
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero container" onclick="closeMenu();">
+      <div class="hero-blue">
+        <div>
+          <h1>
+            <small>Hi, I'm</small>
+            <span id="typing">Carlos Gómez</span>
+          </h1>
+          <p>
+            Guatemalan developer building projects with HTML, CSS, JavaScript, React, Next.js and Tailwind.
+            <span id="span--description">Passionate about AI, often integrating chatGPT and automation into my projects.</span>
+          </p>
+          <div class="call-to-action">
+            <a href="./Sample_Resume_Template.pdf" target="_blank" class="button black">View Resume</a>
+            <a href="mailto:garnier.sum@gmail.com" class="button white">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/" aria-label="GitHub profile Carlos Gómez">
+              <img src="./imgs/github.png" alt="GitHub logo" width="48" />
+            </a>
+            <a href="https://linkedin.com/" aria-label="LinkedIn profile Carlos Gómez">
+              <img src="./imgs/linkedin.png" alt="LinkedIn logo" width="48" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-yellow">
+        <img src="./imgs/hero-image.png" alt="Carlos Gómez Frontend Developer" width="100%" />
+      </div>
+    </section>
+
+    <!-- Logos -->
+    <section class="logos container" aria-label="Technologies I use">
+      <div class="marquee">
+        <div class="track">
+          <img src="./imgs/html5.svg" alt="HTML5 logo" class="icon" />
+          <img src="./imgs/css3.svg" alt="CSS3 logo" class="icon" />
+          <img src="./imgs/tailwind.svg" alt="TailwindCSS logo" class="icon" />
+          <img src="./imgs/javascript.svg" alt="JavaScript logo" class="icon" />
+          <img src="./imgs/react.svg" alt="React.js logo" class="icon" />
+          <img src="./imgs/nextjs.svg" alt="Next.js logo" class="icon" />
+          <img src="./imgs/vscode.svg" alt="VSCode logo" class="icon" />
+          <img src="./imgs/github.svg" alt="GitHub logo" class="icon" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills container">
+      <h2><small>About Me</small> Skills</h2>
+      <div class="holder-blue">
+        <div class="left-column">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Tailwind</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+          <h3>Backend</h3>
+          <ul>
+            <li>Next.js</li>
+          </ul>
+        </div>
+        <div class="right-column">
+          <h3>A bit about me</h3>
+          <p>Proactive and experienced in competitive environments, with strong interpersonal and communication skills.</p>
+          <p>Passionate about web technologies and problem-solving.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="work-experience container">
+      <h2><small>Recent</small> Work Experience</h2>
+      <div class="jobs">
+        <article>
+          <figure>
+            <img src="./imgs/workplace-1.jpg" alt="Bloom - College Hunks workplace" width="100%" loading="lazy" />
+            <figcaption>Bloom - College Hunks</figcaption>
+          </figure>
+          <h3>Inbound Sales Agent</h3>
+          <time>2024 - 2025</time>
+          <p>Sold moving services and managed client relationships.</p>
+        </article>
+
+        <article>
+          <figure>
+            <img src="./imgs/workplace-2.jpg" alt="Conduent - Royal Caribbean workplace" width="100%" loading="lazy" />
+            <figcaption>Conduent - Royal Caribbean</figcaption>
+          </figure>
+          <h3>Sales Agent</h3>
+          <time>2021 - 2023</time>
+          <p>Promoted and sold cruise travels with exceptional customer support.</p>
+        </article>
+
+        <article>
+          <figure>
+            <img src="./imgs/workplace-3.jpg" alt="Genpact - Citi Bank workplace" width="100%" loading="lazy" />
+            <figcaption>Genpact - Citi Bank</figcaption>
+          </figure>
+          <h3>Financial Sales Agent</h3>
+          <time>2018 - 2021</time>
+          <p>Sold financial products including credit cards and loans.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bento container">
+      <h2><small>Previous</small> Completed Projects</h2>
+      <div class="bento-grid">
+        <a href="#" class="bento-item">
+          <img src="./imgs/bento-1.jpg" alt="Frontend project sample 1 by Carlos Gómez" width="100%" loading="lazy" />
+        </a>
+        <a href="#" class="bento-item">
+          <img src="./imgs/bento-2.jpg" alt="Frontend project sample 2 by Carlos Gómez" width="100%" loading="lazy" />
+        </a>
+        <a href="#" class="bento-item">
+          <img src="./imgs/bento-3.jpg" alt="Frontend project sample 3 by Carlos Gómez" width="100%" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Chatbot -->
+    <section class="chatbot container">
+      <h2><small>Talk to me</small> Chatbot</h2>
+      <div class="chatbot-blue">
+        <div class="chat-info">
+          <h3>Azure AI Chatbot</h3>
+          <p>Interactive chatbot with knowledge about my skills, work experience, and CV.</p>
+          <p>You can also download my resume directly here.</p>
+          <a href="./Sample_Resume_Template.pdf" target="_blank" class="button black">Download Resume</a>
+        </div>
+        <div class="chat-box">
+          <div class="scroll-area">
+            <ul id="chat-log">
+              <li>
+                <span class="avatar bot">AI</span>
+                <div class="message">Hi, I'm a friendly chatbot that lets you interact with this portfolio and CV.</div>
+              </li>
+              <li>
+                <span class="avatar user">User</span>
+                <div class="message">I have a question about this resume.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="chat-message">
+            <input type="text" placeholder="Ask Carlos about his skills..." aria-label="Chat input">
+            <button class="button black">Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
